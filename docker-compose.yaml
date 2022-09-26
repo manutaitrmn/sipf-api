@@ -13,8 +13,6 @@ services:
       - '3306:3306'
     expose:
       - '3306'
-    volumes:
-      - my-db:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -28,6 +26,3 @@ services:
     restart: always
     ports:
       - 8081:80
-
-volumes:
-  my-db:
